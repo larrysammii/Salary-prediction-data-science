@@ -1,0 +1,19 @@
+<div class="step-text">
+<h5 id="description">Description</h5>
+<p>In the first stage, let's start with the simplest linear model — it will include salary as a dependent variable and the player's rating as the only predictor. Your goal is to fit such a model, find its coefficients and calculate the <strong>MAPE</strong> (mean average percentage error).</p>
+<p><img alt="player salary linear regression" height="480" name="plot.png" src="https://ucarecdn.com/3cb8df82-f2e2-4050-91e6-24048ca5bdae/" width="480"/></p>
+<p>The scatterplot above shows the relationship between rating and salary and its linear approximation. The red line is the formula <span class="math-tex">\(\hat {salary} = k \cdot rating + b\)</span>, where <span class="math-tex">\(\hat {salary}\)</span> is predicted player's salary, <span class="math-tex">\(k\)</span> is the slope of the linear regression model, and <span class="math-tex">\(b\)</span> is its intercept. You need to find <span class="math-tex">\(k\)</span> and <span class="math-tex">\(b\)</span>. After that, you also need to calculate the MAPE. You can do it with <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_absolute_percentage_error.html" rel="noopener noreferrer nofollow" target="_blank">sklearn.metrics.mean_absolute_percentage_error</a>.</p>
+<h5 id="objectives">Objectives</h5>
+<ol>
+<li>We have automated the data download process in the <em>.py</em> file provided to you. However, if that is inconvenient, feel free to <a href="https://stepik.org/media/attachments/lesson/742735/data.csv" rel="noopener noreferrer nofollow" target="_blank">download the dataset</a> on your own;</li>
+<li>Load the DataFrame using the <code class="java">pandas.read_csv</code> method;</li>
+<li>Make <code class="java">X</code> a DataFrame with a predictor <code class="java">rating</code> and <code class="java">y</code> a series with a target <code class="java">salary</code>;</li>
+<li>Split predictor and target into training and test sets. Use <code class="java">test_size=0.3</code> and <code class="java">random_state=100</code> parameters — they guarantee that the results will be as expected;</li>
+<li>Fit the linear regression model with the following formula on the training data: <span class="math-tex">\(\text{salary} \sim \text{rating}\)</span> .</li>
+<li>Predict a salary with the fitted model on test data and calculate the MAPE;</li>
+<li>Print three float numbers: the model intercept, the slope, and the MAPE rounded to five decimal places and separated by whitespace.</li>
+</ol>
+<h5 id="example">Example</h5>
+<p><strong>Example 1:</strong><em> program output</em></p>
+<pre><code class="language-no-highlight">123456.78901 987.65432 1.23456</code></pre>
+</div>
