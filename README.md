@@ -1,1 +1,2 @@
 # Salary-prediction-data-science
+Linear regression is one of the simplest yet powerful tools for finding regularities in data and using them for prediction. It is widely applied both in science and practice. In this project, I've used scikit-learn library to fit linear models, use them for prediction, compare the models, and select the best one. You will also learn how to carry out testing for certain issues with data.
